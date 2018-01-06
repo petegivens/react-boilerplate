@@ -19,21 +19,21 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: 400,
-    backgroundColor: 'orange'
-  }
-}
+    backgroundColor: 'orange',
+  },
+};
 
 const App = () => (
-  <div style={styles.container}>
-    <div style={styles.header}>
-      <h1>Your New App</h1>
+    <div style={styles.container}>
+      <div style={styles.header}>
+        <h1>Your New App</h1>
+      </div>
+      <div style={styles.main}>
+        <h2>Your App Goes Here</h2>
+        <p>{"The sky's the limit!"}</p>
+      </div>
     </div>
-    <div style={styles.main}>
-      <h2>Your App Goes Here</h2>
-      <p>The sky's the limit!</p>
-    </div>
-  </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app')); // eslint-disable-line
 

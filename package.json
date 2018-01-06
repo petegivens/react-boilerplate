@@ -4,7 +4,6 @@
   "description": "A simple ReactJS boilerplate with out of the box Eslint integration and support for latest ES2017 features",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
     "build": "webpack"
   },

@@ -1,24 +1,39 @@
-alert("hey");
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const styles = {
   container: {
-    display: "flex",
-    padding: "auto",
-    margin: "auto"
+    display: 'flex',
+    flexDirection: 'column',
   },
-  innerDiv: {
-    width: 200,
-    height: 200,
-    backgroundColor: "red"
-  }
-};
-
-export default class Hello extends Component {
-  render() {
-    return <div>Hello from react</div>;
+  header: {
+    flex: 1,
+    textAlign: 'center',
+    backgroundColor: 'skyblue',
+  },
+  main: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: 400,
+    backgroundColor: 'orange'
   }
 }
 
-ReactDOM.render(<Hello />, document.getElementById("app"));
+const App = () => (
+  <div style={styles.container}>
+    <div style={styles.header}>
+      <h1>Your New App</h1>
+    </div>
+    <div style={styles.main}>
+      <h2>Your App Goes Here</h2>
+      <p>The sky's the limit!</p>
+    </div>
+  </div>
+);
+
+ReactDOM.render(<App />, document.getElementById('app'));
+

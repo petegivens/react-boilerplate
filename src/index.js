@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 const styles = {
@@ -23,17 +23,25 @@ const styles = {
   },
 };
 
-const App = () => (
-    <div style={styles.container}>
-      <div style={styles.header}>
-        <h1>Your New App</h1>
+class App extends Component {
+  state = {
+
+  }
+
+  render() {
+    return (
+      <div style={styles.container}>
+        <div style={styles.header}>
+          <h1>Your New App</h1>
+        </div>
+        <div style={styles.main}>
+          <h2>Your App Goes Here</h2>
+          <p>{"The sky's the limit!"}</p>
+        </div>
       </div>
-      <div style={styles.main}>
-        <h2>Your App Goes Here</h2>
-        <p>{"The sky's the limit!"}</p>
-      </div>
-    </div>
-);
+    );
+  }
+}
 
 ReactDOM.render(<App />, document.getElementById('app')); // eslint-disable-line
 

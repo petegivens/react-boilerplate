@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
-    "react"
+    "react",
+    "jsx-a11y"
   ],
   extends: [
     "airbnb-base",

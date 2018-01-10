@@ -67,33 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-alert('hey')
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-
-// const styles = {
-//   container: {
-//     display: 'flex',
-//     padding: 'auto',
-//     margin: 'auto',
-//   },
-//   innerDiv: {
-//     width: 200,
-//     height: 200,
-//     backgroundColor: 'red',
-//   }
-// }
-// const App = () => (
-//   <div style={styles.container}>
-//     <div style={styles.innerDiv}>
-//       <h1>what the fuck</h1>
-//     </div>
-//   </div>
-// );
-
-// ReactDOM.render('App', document.getElementById('app'));
-
-
+throw new Error("Module build failed: SyntaxError: Unexpected token (27:8)\n\n\u001b[0m \u001b[90m 25 | \u001b[39m\n \u001b[90m 26 | \u001b[39m\u001b[36mclass\u001b[39m \u001b[33mApp\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mComponent\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 | \u001b[39m  state \u001b[33m=\u001b[39m {\n \u001b[90m    | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 | \u001b[39m    name\u001b[33m:\u001b[39m \u001b[32m'pete'\u001b[39m\n \u001b[90m 29 | \u001b[39m  }\n \u001b[90m 30 | \u001b[39m  render() {\u001b[0m\n");
 
 /***/ })
 /******/ ]);
